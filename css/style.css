@@ -128,7 +128,7 @@ body {
 }
 
 /* ACTIVE CARD (klik) */
-.card.active {
+.card:active {
     background: #111;
     color: #ffffff;
     transform: scale(1.05);
