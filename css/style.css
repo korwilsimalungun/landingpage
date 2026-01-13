@@ -115,23 +115,29 @@ body {
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-
-    /* tambahan penting karena card sekarang <a> */
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
+/* hover */
 .card:hover {
     transform: translateY(-12px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-/* ACTIVE CARD (klik) */
+/* klik sementara */
 .card:active {
     background: #111;
-    color: #ffffff;
-    transform: scale(1.05);
+    color: #fff;
+    transform: scale(0.96);
+}
+
+/* setelah diklik / fokus */
+.card:visited,
+.card:focus {
+    background: #ffffff;
+    color: #333;
 }
 
 /* ================= RESPONSIVE ================= */
